@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-// จัดการว่าบ้านแต่ละหลังมีอยู่กี่คน
-// ดึงข้อมูลจาก localStorage
+import StatContaxt from '../../contaxt/stat/statContaxt';
 
 const Stat = () => {
+  const statContaxt = useContext(StatContaxt);
+
+  const { houses } = statContaxt;
+
   return (
     <div>
       <h1>Stat</h1>
+      <p>comming soon ...</p>
     </div>
   );
 };
