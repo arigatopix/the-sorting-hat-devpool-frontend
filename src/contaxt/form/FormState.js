@@ -6,7 +6,6 @@ import { ADD_NAME, CLEAR_CURRENT } from '../types';
 const FormState = props => {
   const initialState = {
     name: null,
-    current: null,
   };
 
   // * Send state to Reducer
@@ -21,7 +20,6 @@ const FormState = props => {
 
   const addName = name => {
     // หลังจากได้ชื้อมา ก็ต้อง return บ้าน
-
     dispatch({
       type: ADD_NAME,
       payload: name,
@@ -32,7 +30,6 @@ const FormState = props => {
     <FormContaxt.Provider
       value={{
         name: state.name,
-        current: state.current,
         clearForm,
         addName,
       }}

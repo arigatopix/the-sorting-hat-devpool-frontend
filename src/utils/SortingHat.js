@@ -21,10 +21,6 @@ class SortingHat {
     ];
   }
 
-  recieveData() {
-    // TODO ดึงข้อมูลจาก ใน localStorage มาเก็บไว้กับตัว
-  }
-
   show() {
     console.log(this.houses);
   }
@@ -68,8 +64,10 @@ class SortingHat {
 
     // TODO update ใน localStorage
 
-    // แสดงผลหน้าจอ
-    console.log(`Hello ${name} you house is ${randomHouse.name} `);
+    return {
+      magicianName: name,
+      housename: randomHouse.name,
+    };
   }
 }
 

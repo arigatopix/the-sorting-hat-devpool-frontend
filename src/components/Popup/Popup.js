@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-// รับ ชื่อจาก Form
-// แสดงผล ชื่อ
-
-// แสดงผลบ้านที่ได้
-// สามารถปิดได้
-
-const Popup = ({ magicianName, houseName }) => {
+const Popup = ({ magicianName, housename }) => {
   return (
     <div>
       <p>
-        Ah! {magicianName} I know just what to do with you... House{houseName}{' '}
-        !!!!
+        Ah! <b>{magicianName}</b> I know just what to do with you... House{' '}
+        <b>{housename} 🪄!!!!</b>
       </p>
     </div>
   );
