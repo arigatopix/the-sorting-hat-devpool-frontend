@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Popup = () => {
+// รับ ชื่อจาก Form
+// แสดงผล ชื่อ
+
+// แสดงผลบ้านที่ได้
+// สามารถปิดได้
+
+const Popup = ({ magicianName, houseName }) => {
   return (
     <div>
-      <h1>Popup</h1>
+      <p>
+        Ah! {magicianName} I know just what to do with you... House{houseName}{' '}
+        !!!!
+      </p>
     </div>
   );
 };
