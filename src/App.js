@@ -2,17 +2,21 @@ import Form from './components/Form/Form';
 import Stat from './components/Stat/Stat';
 import Popup from './components/Popup/Popup';
 
+import FormState from './contaxt/form/FormState';
+
 function App() {
   return (
     <>
-      <Form />
-      <br />
+      <FormState>
+        <Form />
+        <br />
 
-      <Stat />
-      <br />
+        <Stat />
+        <br />
 
-      <Popup />
-      <br />
+        <Popup />
+        <br />
+      </FormState>
     </>
   );
 }

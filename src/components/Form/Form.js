@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import FormContaxt from '../../contaxt/form/formContaxt';
 
 const Form = () => {
+  const formContaxt = useContext(FormContaxt);
+
+  // load init state
+  const { addName } = formContaxt;
+
   const [name, setName] = useState('');
 
   const clearAll = () => {
@@ -9,7 +15,8 @@ const Form = () => {
 
   const onSubmit = e => {
     // TODO send data to STAT AND POPUP
-    // console.log(e.target.name);
+    // * action creator
+    addName(name);
 
     // Clear Form
     clearAll();
